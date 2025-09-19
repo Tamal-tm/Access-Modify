@@ -14,23 +14,29 @@ IN DETAIL:
 1. Public Attributes
    
 --Accessible from anywhere in the program.
+
 --No special restrictions.
 
 3. Protected Attributes (_attribute)
    
 --_Indicated by a single underscore (_).
+
 --Intended for internal use (convention, not enforced).
+
 --Still accessible, but should not be modified directly outside the class.
 
 4. Private Attributes (__attribute)
 
 --Indicated by a double underscore (__).
+
 --Python performs name mangling (_ClassName__attribute).
+
 --Cannot be accessed directly.
 
 4. Getter and Setter Methods
 
 --Getter → Retrieve private data safely.
+
 --Setter → Modify private data with validation/control.
 
 5. Property Decorators (@property)
